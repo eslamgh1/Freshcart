@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.slick-prev, .slick-next{
+  display: block !important;
+}
+
+@media (max-width: 425px) {
+  .custom-nav {
+  
+    padding-right: .5px; 
+    
+
+}}
+
+@media (max-width: 425px) {
+  .maintab {
+  
+    gap: 4rem;
+    row-gap: 1rem;
+    /* row-gap: 4rem; */
+    padding-top: 10px;
+
+}}
+
+@media (min-width: 768px) and (max-width: 869px) {
+  .maintab {
+ 
+    margin-top: 10px !important; 
+  }
+}
+
+
+@media (max-width: 869px) {
+  .group-hover\:translate-y-\[-130\%\] {
+    transform: translateY(0) !important; /* to be visible */
+  
+  }
+
+  .translate-y-\[100\%\] {
+    transform: translateY(0) !important; /* to be visible */
+  }
+
+  .addBtn{
+    width: 150%;
+  }
+} 
+
+
+@media (max-width: 770px) {
+  /*  table rows */
+  table tbody tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    border: 1px solid #e5e7eb; /* Add border for separation */
+    border-radius: 0.5rem; 
+    padding: 1rem;
+  }
+
+  /*  table header */
+  table thead {
+    display: none;
+  }
+
+  /* Display each cell as a block */
+  table tbody td {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+
+  /* Add labels for each cell */
+  table tbody td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+    margin-right: 0.5rem;
+  }
+
+  /* Adjust image size */
+  table tbody td img {
+    width: 100% !important; 
+    height: auto;
+    margin-right: 1rem;
+  }
+
+  /* Adjust quantity controls */
+  table tbody td .flex {
+    justify-content: flex-start;
+  }
+
+  /* Reduce font sizes */
+  table tbody td {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  /* Adjust padding */
+  table tbody td {
+    padding: 0.25rem 0;
+  }
+
+  /*  Remove button is visible */
+  table tbody td:nth-child(5) {
+    display: flex;
+    align-items: center;
+  }
+}
