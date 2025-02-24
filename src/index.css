@@ -110,3 +110,20 @@
     align-items: center;
   }
 }
+
+.btnpayments {
+  display: flex;
+  gap: 12px;
+}
+
+@media (max-width: 640px) {
+  .btnpayments {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btnpayment {
+    width: 100%;
+    margin: 5px 0 !important; /* Override any existing margins */
+  }
+}

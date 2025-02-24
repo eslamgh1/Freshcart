@@ -149,7 +149,7 @@ export default function Order() {
 
   return (
     <>
-      <h1>Order</h1>
+      {/* <h1>Order</h1> */}
       <div className="container mx-auto py-5">
         <form onSubmit={formikCart.handleSubmit} className="max-w-sm mx-auto">
           <div className="mb-5">
@@ -202,20 +202,22 @@ export default function Order() {
             />
           </div>
 
-          <button
+  <div className="btnpayments">
+  <button
             type="submit"
             onClick={() => setIsCash(true)}
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="btnpayment text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Pay Cash on delievery
           </button>
           <button
             type="submit"
             onClick={() => setIsCash(false)}
-            className=" mx-3 text-white bg-cyan-500 hover:bg-cyan-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className=" btnpayment mx-3 text-white bg-cyan-500 hover:bg-cyan-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Checkout with card
           </button>
+  </div>
         </form>
       </div>
     </>

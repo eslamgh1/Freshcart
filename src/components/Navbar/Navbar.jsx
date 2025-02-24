@@ -25,7 +25,7 @@ export default function Navbar() {
     if (!isMenuOpen) {
       setTimeout(() => {
         setIsMenuOpen(false);
-      }, 2000); // Close the menu after 2 seconds
+      }, 6000); // Close the menu after 2 seconds
     }
   };
 
