@@ -58,6 +58,8 @@
     border: 1px solid #e5e7eb; /* Add border for separation */
     border-radius: 0.5rem; 
     padding: 1rem;
+    
+    
   }
 
   /*  table header */
@@ -71,6 +73,7 @@
     align-items: center;
     text-align: left;
     padding: 0.5rem 0;
+    justify-content: center;
   }
 
   /* Add labels for each cell */
@@ -80,6 +83,7 @@
     display: inline-block;
     width: 100px;
     margin-right: 0.5rem;
+    justify-content: center;
   }
 
   /* Adjust image size */
