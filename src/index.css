@@ -58,6 +58,7 @@
     border: 1px solid #e5e7eb; /* Add border for separation */
     border-radius: 0.5rem; 
     padding: 1rem;
+    justify-content: center;
     
     
   }
