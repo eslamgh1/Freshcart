@@ -59,6 +59,7 @@
     border-radius: 0.5rem; 
     padding: 1rem;
     justify-content: center;
+    align-items: center;
     
     
   }
@@ -75,6 +76,7 @@
     text-align: left;
     padding: 0.5rem 0;
     justify-content: center;
+
   }
 
   /* Add labels for each cell */
@@ -85,6 +87,7 @@
     width: 100px;
     margin-right: 0.5rem;
     justify-content: center;
+    align-items: center;
   }
 
   /* Adjust image size */
@@ -92,16 +95,21 @@
     width: 100% !important; 
     height: auto;
     margin-right: 1rem;
+    justify-content: center;
+    align-items: center;
   }
 
   /* Adjust quantity controls */
   table tbody td .flex {
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
+    justify-content: center;
+    align-items: center;
   }
 
   /* Reduce font sizes */
   table tbody td {
     font-size: 0.875rem; /* 14px */
+    
   }
 
   /* Adjust padding */
@@ -113,6 +121,8 @@
   table tbody td:nth-child(5) {
     display: flex;
     align-items: center;
+    justify-content: center;
+
   }
 }
 
@@ -125,6 +135,8 @@
   .btnpayments {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
   }
 
   .btnpayment {
